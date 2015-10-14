@@ -6,6 +6,7 @@
   "typings": "lib/index.d.ts",
   "dependencies": {
     "phosphide": "git+https://github.com/dwillmer/phosphide.git",
+    "phosphide-dockarea": "git+https://github.com/dwillmer/phosphide-dockarea.git",
     "phosphide-menu": "git+https://github.com/dwillmer/phosphide-menu.git"
   },
   "devDependencies": {

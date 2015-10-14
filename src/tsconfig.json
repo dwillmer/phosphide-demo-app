@@ -11,6 +11,7 @@
   },
   "files": [
     "../node_modules/phosphide-menu/lib/index.d.ts",
+    "../node_modules/phosphide-dockarea/lib/index.d.ts",
     "index.ts"
   ]
 }

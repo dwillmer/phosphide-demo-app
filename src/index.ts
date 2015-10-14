@@ -15,6 +15,10 @@ import {
   MenuPlugin
 } from 'phosphide-menu';
 
+import {
+  DockAreaPlugin
+} from 'phosphide-dockarea';
+
 
 function main(): void {
   var app = new PluginApplication(); 
@@ -22,8 +26,11 @@ function main(): void {
   // This is the very naive way of registering plugins,
   // it's just used here to demo the functionality, but
   // shouldn't be used in real apps.
-  var mp = new MenuPlugin('menu');
+  var mp = new MenuPlugin('mainmenu');
   app.registerPlugin(mp);
+
+  var da = new DockAreaPlugin('dockarea');
+  app.registerPlugin(da);
 
 }
 
