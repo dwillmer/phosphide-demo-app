@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "browserify": "^11.2.0",
+    "browserify-css": "^0.6.1",
     "browserify-istanbul": "^0.2.1",
     "coveralls": "^2.11.4",
     "expect.js": "^0.3.1",
@@ -22,7 +23,8 @@
   "scripts": {
     "clean": "rimraf lib",
     "build:src": "tsc --project src",
-    "build": "npm run build:src",
+    "build:browser": "browserify -g browserify-css lib/index.js -o build/bundle.js",
+    "build": "npm run build:src && npm run build:browser",
     "prepublish": "npm run build"
   },
   "repository": {

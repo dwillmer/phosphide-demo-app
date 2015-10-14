@@ -8,5 +8,9 @@
     "moduleResolution": "node",
     "target": "ES5",
     "outDir": "../lib"
-  }
+  },
+  "files": [
+    "../node_modules/phosphide-menu/lib/index.d.ts",
+    "index.ts"
+  ]
 }

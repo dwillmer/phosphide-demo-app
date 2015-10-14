@@ -23,7 +23,7 @@ function main(): void {
   // it's just used here to demo the functionality, but
   // shouldn't be used in real apps.
   var mp = new MenuPlugin('menu');
-  app.registerPlugin( mp );
+  app.registerPlugin(mp);
 
 }
 
