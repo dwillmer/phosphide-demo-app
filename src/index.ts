@@ -19,6 +19,10 @@ import {
   DockAreaPlugin
 } from 'phosphide-dockarea';
 
+import {
+  JupyterNotebookPlugin
+} from 'phosphide-jupyter';
+
 
 function main(): void {
   var app = new PluginApplication(); 
@@ -31,6 +35,9 @@ function main(): void {
 
   var da = new DockAreaPlugin('dockarea');
   app.registerPlugin(da);
+
+  var jn = new JupyterNotebookPlugin('jupyter');
+  app.registerPlugin(jn);
 
 }
 

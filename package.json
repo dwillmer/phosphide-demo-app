@@ -7,7 +7,8 @@
   "dependencies": {
     "phosphide": "git+https://github.com/dwillmer/phosphide.git",
     "phosphide-dockarea": "git+https://github.com/dwillmer/phosphide-dockarea.git",
-    "phosphide-menu": "git+https://github.com/dwillmer/phosphide-menu.git"
+    "phosphide-menu": "git+https://github.com/dwillmer/phosphide-menu.git",
+    "phosphide-jupyter": "git+https://github.com/dwillmer/phosphide-jupyter.git"
   },
   "devDependencies": {
     "browserify": "^11.2.0",
