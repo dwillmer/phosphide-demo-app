@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "rimraf": "^2.4.2",
+    "steal": "^0.12.1",
     "typedoc": "^0.3.11",
     "typescript": "^1.6.2"
   },
