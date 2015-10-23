@@ -10,9 +10,7 @@
     "outDir": "../lib"
   },
   "files": [
-    "../node_modules/phosphide-menu/lib/index.d.ts",
-    "../node_modules/phosphide-dockarea/lib/index.d.ts",
-    "../node_modules/phosphide-jupyter/build/index.d.ts",
+    "../typings/es6-promise.d.ts",
     "index.ts"
   ]
 }
