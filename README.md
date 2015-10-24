@@ -1,6 +1,6 @@
 # phosphide-demo-app
 
 ```bash
-npm install systemjs
-npm install traceur babel typescript
+npm install
+python main.py
 ```
