@@ -12,14 +12,13 @@ import {
 } from 'phosphide';
 
 
-function main(): void {
-  listPlugins().then(plugins => {
-    console.log(plugins);
-    loadPlugin('jupyter');
-    loadPlugin('dockarea');
-    loadPlugin('mainmenu');
-  });
-}
 
-window.onload = main;
+console.log('in main');
+listPlugins().then(plugins => {
+  console.log(plugins);
+  loadPlugin('phosphide-jupyter');
+  loadPlugin('phosphide-dockarea');
+  loadPlugin('phosphide-menu');
+});
+
 
