@@ -5,28 +5,21 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "phosphide": "git+https://github.com/dwillmer/phosphide.git",
-    "phosphide-dockarea": "git+https://github.com/dwillmer/phosphide-dockarea.git",
-    "phosphide-menu": "git+https://github.com/dwillmer/phosphide-menu.git",
-    "phosphide-jupyter": "git+https://github.com/dwillmer/phosphide-jupyter.git"
+    "phosphide": "git+https://github.com/blink1073/phosphide.git",
+    "phosphide-dockarea": "git+https://github.com/blink1073/phosphide-dockarea.git",
+    "phosphide-menu": "git+https://github.com/blink1073/phosphide-menu.git",
+    "phosphide-jupyter": "git+https://github.com/blink1073/phosphide-jupyter.git"
   },
   "devDependencies": {
-    "browserify": "^11.2.0",
-    "browserify-css": "^0.6.1",
-    "browserify-istanbul": "^0.2.1",
-    "coveralls": "^2.11.4",
-    "expect.js": "^0.3.1",
-    "istanbul": "^0.3.19",
-    "mocha": "^2.2.5",
     "rimraf": "^2.4.2",
+    "steal": "^0.12.1",
+    "steal-builtins": "^1.0.0",
     "typedoc": "^0.3.11",
     "typescript": "^1.6.2"
   },
   "scripts": {
     "clean": "rimraf lib",
-    "build:src": "tsc --project src",
-    "build:browser": "browserify -g browserify-css lib/index.js -o build/bundle.js",
-    "build": "npm run build:src && npm run build:browser",
+    "build": "tsc --project src",
     "prepublish": "npm run build"
   },
   "repository": {

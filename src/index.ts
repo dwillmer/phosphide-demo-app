@@ -8,35 +8,17 @@
 'use strict';
 
 import {
-  PluginApplication, ExtensionDelegate
+  listPlugins, loadPlugin
 } from 'phosphide';
 
-import {
-  MenuPlugin
-} from 'phosphide-menu';
-
-import {
-  DockAreaPlugin
-} from 'phosphide-dockarea';
-
-import {
-  JupyterNotebookPlugin
-} from 'phosphide-jupyter';
 
 
-function main(): void {
-  var app = new PluginApplication(); 
+console.log('in main');
+listPlugins().then(plugins => {
+  console.log(plugins);
+  loadPlugin('phosphide-jupyter');
+  loadPlugin('phosphide-dockarea');
+  loadPlugin('phosphide-menu');
+});
 
-  var mp = new MenuPlugin('mainmenu');
-  app.registerPlugin(mp);
-
-  var da = new DockAreaPlugin('dockarea');
-  app.registerPlugin(da);
-
-  var jn = new JupyterNotebookPlugin('jupyter');
-  app.registerPlugin(jn);
-
-}
-
-window.onload = main;
 

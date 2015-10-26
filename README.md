@@ -1,6 +1,9 @@
 # phosphide-demo-app
 
 ```bash
-npm install systemjs
-npm install traceur babel typescript
+npm install
+npm run build
+python main.py
 ```
+
+Navigate to "localhost:8765".
