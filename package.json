@@ -5,14 +5,14 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "phosphide": "git+https://github.com/blink1073/phosphide.git",
-    "phosphide-dockarea": "git+https://github.com/blink1073/phosphide-dockarea.git",
-    "phosphide-menu": "git+https://github.com/blink1073/phosphide-menu.git",
-    "phosphide-jupyter": "git+https://github.com/blink1073/phosphide-jupyter.git"
+    "jupyter-js-filebrowser-plugin": "git+https://github.com/dwillmer/jupyter-js-filebrowser-plugin.git#initial",
+    "jupyter-js-terminal-plugin": "git+https://github.com/dwillmer/jupyter-js-terminal-plugin.git#initial",
+    "phosphide": "git+https://github.com/dwillmer/phosphide.git",
+    "phosphor-plugins": "git+https://github.com/dwillmer/phosphor-plugins.git"
   },
   "devDependencies": {
     "rimraf": "^2.4.2",
-    "steal": "^0.12.1",
+    "steal": "^0.12.3",
     "steal-builtins": "^1.0.0",
     "typedoc": "^0.3.11",
     "typescript": "^1.6.2"

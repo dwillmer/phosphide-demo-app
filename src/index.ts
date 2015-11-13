@@ -8,17 +8,19 @@
 'use strict';
 
 import {
-  listPlugins, loadPlugin
-} from 'phosphide';
+  fetchPlugins, loadPlugin, listPlugins
+} from 'phosphor-plugins';
 
+console.log("PLUGINS: " + listPlugins().toString());
 
-
-console.log('in main');
-listPlugins().then(plugins => {
-  console.log(plugins);
-  loadPlugin('phosphide-jupyter');
-  loadPlugin('phosphide-dockarea');
-  loadPlugin('phosphide-menu');
+fetchPlugins().then(plugins => {
+  //loadPlugin('jupyter-js-services');
+  return loadPlugin('phosphide').then(() => {
+    return loadPlugin('jupyter-js-filebrowser-plugin').then(() => {
+      return loadPlugin('jupyter-js-terminal-plugin');
+    });
+  });
+})
+.catch((error: any) => {
+  console.log("ERROR loading: " + error.message);
 });
-
-
