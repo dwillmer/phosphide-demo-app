@@ -7,6 +7,7 @@
   "dependencies": {
     "jupyter-js-filebrowser-plugin": "jupyter/jupyter-js-filebrowser-plugin.git",
     "jupyter-js-terminal-plugin": "jupyter/jupyter-js-terminal-plugin",
+    "jupyter-js-editor-plugin": "git+https://github.com/dwillmer/jupyter-js-editor-plugin.git#initial",
     "phosphide": "phosphorjs/phosphide",
     "phosphor-plugins": "phosphorjs/phosphor-plugins"
   },

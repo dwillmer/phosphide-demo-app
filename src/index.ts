@@ -14,10 +14,11 @@ import {
 console.log("PLUGINS: " + listPlugins().toString());
 
 fetchPlugins().then(plugins => {
-  //loadPlugin('jupyter-js-services');
   return loadPlugin('phosphide').then(() => {
     return loadPlugin('jupyter-js-filebrowser-plugin').then(() => {
-      return loadPlugin('jupyter-js-terminal-plugin');
+      return loadPlugin('jupyter-js-editor-plugin').then(() => {
+        return loadPlugin('jupyter-js-terminal-plugin');
+      });
     });
   });
 })
