@@ -5,10 +5,10 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "jupyter-js-filebrowser-plugin": "git+https://github.com/dwillmer/jupyter-js-filebrowser-plugin.git#initial",
-    "jupyter-js-terminal-plugin": "git+https://github.com/dwillmer/jupyter-js-terminal-plugin.git#initial",
-    "phosphide": "git+https://github.com/dwillmer/phosphide.git",
-    "phosphor-plugins": "git+https://github.com/dwillmer/phosphor-plugins.git"
+    "jupyter-js-filebrowser-plugin": "jupyter/jupyter-js-filebrowser-plugin.git",
+    "jupyter-js-terminal-plugin": "jupyter/jupyter-js-terminal-plugin",
+    "phosphide": "phosphorjs/phosphide",
+    "phosphor-plugins": "phosphorjs/phosphor-plugins"
   },
   "devDependencies": {
     "rimraf": "^2.4.2",
