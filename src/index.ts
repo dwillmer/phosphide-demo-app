@@ -8,20 +8,25 @@
 'use strict';
 
 import {
-  fetchPlugins, loadPlugin, listPlugins
+  registerPlugin
 } from 'phosphor-plugins';
 
-console.log("PLUGINS: " + listPlugins().toString());
 
-fetchPlugins().then(plugins => {
-  return loadPlugin('phosphide').then(() => {
-    return loadPlugin('jupyter-js-filebrowser-plugin').then(() => {
-      return loadPlugin('jupyter-js-editor-plugin').then(() => {
-        return loadPlugin('jupyter-js-terminal-plugin');
-      });
-    });
-  });
-})
-.catch((error: any) => {
-  console.log("ERROR loading: " + error.message);
-});
+registerPlugin('phosphide');
+// registerPlugin('jupyter-js-filebrowser-plugin');
+registerPlugin('jupyter-js-editor-plugin');
+// registerPlugin('jupyter-js-terminal-plugin');
+
+
+// fetchPlugins().then(plugins => {
+//   return loadPlugin('phosphide').then(() => {
+//     return loadPlugin('jupyter-js-filebrowser-plugin').then(() => {
+//       return loadPlugin('jupyter-js-editor-plugin').then(() => {
+//         return loadPlugin('jupyter-js-terminal-plugin');
+//       });
+//     });
+//   });
+// })
+// .catch((error: any) => {
+//   console.log("ERROR loading: " + error.message);
+// });

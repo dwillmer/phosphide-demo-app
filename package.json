@@ -5,11 +5,13 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "jupyter-js-filebrowser-plugin": "jupyter/jupyter-js-filebrowser-plugin.git",
-    "jupyter-js-terminal-plugin": "jupyter/jupyter-js-terminal-plugin",
-    "jupyter-js-editor-plugin": "git+https://github.com/dwillmer/jupyter-js-editor-plugin.git#initial",
-    "phosphide": "phosphorjs/phosphide",
-    "phosphor-plugins": "phosphorjs/phosphor-plugins"
+    "jupyter-js-filebrowser-plugin": "dwillmer/jupyter-js-filebrowser-plugin.git#initial",
+    "jupyter-js-terminal-plugin": "dwillmer/jupyter-js-terminal-plugin.git#initial",
+    "jupyter-js-editor-plugin": "dwillmer/jupyter-js-editor-plugin.git#initial",
+    "phosphide": "dwillmer/phosphide",
+    "phosphor-plugins": "^0.2.0",
+    "systemjs": "^0.19.6",
+    "systemjs-plugin-json": "^0.1.0"
   },
   "devDependencies": {
     "rimraf": "^2.4.2",

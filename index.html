@@ -8,8 +8,36 @@
   <script src="ext/javascriptmode.js"></script>
   <script src="ext/cssmode.js"></script>
   <script src="ext/jquery-2.1.4.min.js"></script>
-  <script src="node_modules/steal/steal.js" data-main="lib/index"></script>
+  <!-- <script src="node_modules/steal/steal.js" data-main="lib/index"></script> -->
+  <script src="node_modules/systemjs/dist/system.js"></script>
+  <script>
+    System.config({
+      'map': {
+        'system-css': 'node_modules/system-css/css.js',
+        'system-json': 'node_modules/systemjs-plugin-json/json.js',
+        'phosphor-disposable': 'node_modules/phosphor-plugins/node_modules/phosphor-disposable/lib/index.js',
+        'phosphor-plugins': 'node_modules/phosphor-plugins/lib/index.js',
+        'phosphide': 'node_modules/phosphide',
+        'jupyter-js-editor-plugin': 'node_modules/jupyter-js-editor-plugin',
+        'jupyter-js-terminal-plugin': 'node_modules/jupyter-js-terminal-plugin',
+        'jupyter-js-filebrowser-plugin': 'node_modules/jupyter-js-filebrowser-plugin'
+      },
+      'packages': {
+        '.': {
+          'defaultExtension': 'js',
+          'meta': {
+            '*.css': { 'loader': 'system-css' },
+            '*.json': { 'loader': 'system-json' }
+          }
+        }
+      }
+    });
+  </script>
+
 </head>
 <body>
+  <script>
+    System.import('lib/index');
+  </script>
 </body>
 </html>
