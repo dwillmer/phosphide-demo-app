@@ -13,8 +13,8 @@ import {
 
 
 registerPlugin('phosphide');
-// registerPlugin('jupyter-js-filebrowser-plugin');
-registerPlugin('jupyter-js-editor-plugin');
+registerPlugin('jupyter-js-filebrowser-plugin');
+// registerPlugin('jupyter-js-editor-plugin');
 // registerPlugin('jupyter-js-terminal-plugin');
 
 
