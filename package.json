@@ -7,7 +7,7 @@
   "dependencies": {
     "jupyter-js-filebrowser-plugin": "dwillmer/jupyter-js-filebrowser-plugin.git#initial",
     "phosphide": "dwillmer/phosphide",
-    "phosphor-plugins": "^0.2.0",
+    "phosphor-plugins": "dwillmer/phosphor-plugins",
     "systemjs": "^0.19.6",
     "systemjs-plugin-json": "^0.1.0",
     "steal": "^0.12.7"
